@@ -21,8 +21,9 @@ edge_samples.append(img_array[height//2, width-20])  # right middle
 bg_color = np.median(edge_samples, axis=0).astype(int)
 print(f"Detected background color (RGB): {bg_color}")
 
-# Create mask
-def is_block_color(pixel, bg, tolerance=80):
+# Create mask - more sensitive to catch rounded edges
+def is_block_color(pixel, bg, tolerance=60):
+    """Lower tolerance to catch more edge pixels including rounded corners"""
     diff = np.abs(pixel.astype(int) - bg.astype(int))
     return np.sum(diff) > tolerance
 
@@ -36,8 +37,9 @@ for y in range(height):
 # Find blocks using projection method
 print("Finding blocks...")
 
+# Lower threshold to catch more edge content
 row_sums = np.sum(mask, axis=1)
-rows_with_content = row_sums > width * 10
+rows_with_content = row_sums > width * 5  # More sensitive
 
 # Find groups of rows
 block_rows = []
@@ -60,7 +62,7 @@ all_blocks = []
 for start_y, end_y in block_rows:
     row_mask = mask[start_y:end_y+1, :]
     col_sums = np.sum(row_mask, axis=0)
-    cols_with_content = col_sums > (end_y - start_y) * 10
+    cols_with_content = col_sums > (end_y - start_y) * 5  # More sensitive
 
     in_block = False
     start_col = 0
@@ -111,8 +113,9 @@ for i, (x1, y1, x2, y2) in enumerate(all_blocks):
 
     name = melachot_order[i]
 
-    # Crop with a small margin to ensure we get the full block including rounded corners
-    margin = 5
+    # Crop with a generous margin to ensure we get the full block including rounded corners
+    # Rounded corners need extra space beyond the detected rectangular bounds
+    margin = 20
     x1_crop = max(0, x1 - margin)
     y1_crop = max(0, y1 - margin)
     x2_crop = min(width, x2 + margin)

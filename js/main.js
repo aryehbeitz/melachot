@@ -1,5 +1,5 @@
 // Deployment timestamp
-const DEPLOYMENT_TIME = 'November 07, 2025 at 11:53:52 (Israel Time)';
+const DEPLOYMENT_TIME = 'November 07, 2025 at 12:01:59 (Israel Time)';
 
 // Load the links.json file and populate the grid
 async function loadMelachot() {
