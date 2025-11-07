@@ -258,11 +258,11 @@ Any `image` key is optional; when present, the view will use the supplied file i
 
 ## Todos
 
-- [ ] Create index.html with grid container and placeholder cells for 39 melachot blocks.
-- [ ] Create CSS file with grid layout, color scheme matching design, and responsive styles.
-- [ ] Create links.json with all 39 melachot abbreviations mapped to placeholder URLs.
-- [ ] Create JavaScript to load links.json and apply click handlers to each melacha block.
-- [ ] Populate HTML with all 39 melachot (abbreviations and Hebrew names) from the design.
-- [ ] Add _config.yml and ensure proper structure for GitHub Pages deployment.
-- [ ] Create README.md with project description and setup instructions.
+- [x] Create index.html with grid container and placeholder cells for 39 melachot blocks.
+- [x] Create CSS file with grid layout, color scheme matching design, and responsive styles.
+- [x] Create links.json with all 39 melachot abbreviations mapped to placeholder URLs.
+- [x] Create JavaScript to load links.json and apply click handlers to each melacha block.
+- [x] Populate HTML with all 39 melachot (abbreviations and Hebrew names) from the design.
+- [x] Add _config.yml and ensure proper structure for GitHub Pages deployment.
+- [x] Create README.md with project description and setup instructions.
 
