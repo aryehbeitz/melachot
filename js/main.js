@@ -42,25 +42,29 @@ async function loadMelachot() {
 
                 // Apply background color or image
                 if (melacha.image) {
+                    // Use the image as the entire block content
                     block.style.backgroundImage = `url(${melacha.image})`;
+                    block.style.backgroundSize = 'cover';
+                    block.style.backgroundPosition = 'center';
                 } else if (melacha.colors) {
+                    // Use colors and text for blocks without images
                     block.style.backgroundColor = melacha.colors.background;
                     block.style.color = melacha.colors.text;
+
+                    // Create display name element
+                    const displayName = document.createElement('div');
+                    displayName.className = 'display-name';
+                    displayName.textContent = melacha.displayName;
+
+                    // Create subtext element
+                    const subtext = document.createElement('div');
+                    subtext.className = 'subtext';
+                    subtext.textContent = melacha.subtext;
+
+                    // Append elements to the block
+                    block.appendChild(displayName);
+                    block.appendChild(subtext);
                 }
-
-                // Create display name element
-                const displayName = document.createElement('div');
-                displayName.className = 'display-name';
-                displayName.textContent = melacha.displayName;
-
-                // Create subtext element
-                const subtext = document.createElement('div');
-                subtext.className = 'subtext';
-                subtext.textContent = melacha.subtext;
-
-                // Append elements to the block
-                block.appendChild(displayName);
-                block.appendChild(subtext);
 
                 // Append block to grid
                 grid.appendChild(block);
