@@ -2,236 +2,391 @@
   "Choresh": {
     "displayName": "Ch",
     "subtext": "Choresh",
-    "colors": { "background": "#00D5FF", "text": "#000000" },
+    "colors": {
+      "background": "#00D5FF",
+      "text": "#000000"
+    },
     "url": "https://www.chabad.org/library/article_cdo/aid/4739406/jewish/Choresh-Plowing.htm",
     "image": "images/choresh.png"
   },
   "Zoreah": {
     "displayName": "Zo",
     "subtext": "Zoreah",
-    "colors": { "background": "#00D5FF", "text": "#000000" },
-    "url": "https://www.chabad.org/library/article_cdo/aid/4739388/jewish/Zoraya-Planting.htm"
+    "colors": {
+      "background": "#00D5FF",
+      "text": "#000000"
+    },
+    "url": "https://www.chabad.org/library/article_cdo/aid/4739388/jewish/Zoraya-Planting.htm",
+    "image": "images/zoreah.png"
   },
   "Kotzair": {
     "displayName": "Ko",
     "subtext": "Kotzair",
-    "colors": { "background": "#00D5FF", "text": "#000000" },
-    "url": "https://www.chabad.org/library/article_cdo/aid/4740235/jewish/Kotzeir-Reaping.htm"
+    "colors": {
+      "background": "#00D5FF",
+      "text": "#000000"
+    },
+    "url": "https://www.chabad.org/library/article_cdo/aid/4740235/jewish/Kotzeir-Reaping.htm",
+    "image": "images/kotzair.png"
   },
   "Ma'amir": {
     "displayName": "Mm",
     "subtext": "Ma'amir",
-    "colors": { "background": "#00D5FF", "text": "#000000" },
-    "url": "https://www.chabad.org/library/article_cdo/aid/4740248/jewish/Meamer-Gathering.htm"
+    "colors": {
+      "background": "#00D5FF",
+      "text": "#000000"
+    },
+    "url": "https://www.chabad.org/library/article_cdo/aid/4740248/jewish/Meamer-Gathering.htm",
+    "image": "images/maamir.png"
   },
   "Dush": {
     "displayName": "Du",
     "subtext": "Dush",
-    "colors": { "background": "#00D5FF", "text": "#000000" },
-    "url": "https://www.chabad.org/library/article_cdo/aid/4786919/jewish/Dosh-Threshing.htm"
+    "colors": {
+      "background": "#00D5FF",
+      "text": "#000000"
+    },
+    "url": "https://www.chabad.org/library/article_cdo/aid/4786919/jewish/Dosh-Threshing.htm",
+    "image": "images/dush.png"
   },
   "Zoreh": {
     "displayName": "Zr",
     "subtext": "Zoreh",
-    "colors": { "background": "#00D5FF", "text": "#000000" },
-    "url": "https://www.chabad.org/library/article_cdo/aid/4788763/jewish/Zoreh-Winnowing.htm"
+    "colors": {
+      "background": "#00D5FF",
+      "text": "#000000"
+    },
+    "url": "https://www.chabad.org/library/article_cdo/aid/4788763/jewish/Zoreh-Winnowing.htm",
+    "image": "images/zoreh.png"
   },
   "Ma'avir": {
     "displayName": "Mv",
     "subtext": "Ma'avir",
-    "colors": { "background": "#FFC107", "text": "#000000" },
-    "url": "https://www.chabad.org/library/article_cdo/aid/6897613/jewish/Mavir-Kindling-a-Fire.htm"
+    "colors": {
+      "background": "#FFC107",
+      "text": "#000000"
+    },
+    "url": "https://www.chabad.org/library/article_cdo/aid/6897613/jewish/Mavir-Kindling-a-Fire.htm",
+    "image": "images/maavir.png"
   },
   "Mechabeh": {
     "displayName": "Mc",
     "subtext": "Mechabeh",
-    "colors": { "background": "#FFC107", "text": "#000000" },
-    "url": "https://www.chabad.org/library/article_cdo/aid/5580653/jewish/Mechabeh-Extinguishing.htm"
+    "colors": {
+      "background": "#FFC107",
+      "text": "#000000"
+    },
+    "url": "https://www.chabad.org/library/article_cdo/aid/5580653/jewish/Mechabeh-Extinguishing.htm",
+    "image": "images/mechabeh.png"
   },
   "Borer": {
     "displayName": "Bo",
     "subtext": "Borer",
-    "colors": { "background": "#D8A8FF", "text": "#000000" },
-    "url": "https://www.chabad.org/library/article_cdo/aid/4788764/jewish/Borer-Selecting.htm"
+    "colors": {
+      "background": "#D8A8FF",
+      "text": "#000000"
+    },
+    "url": "https://www.chabad.org/library/article_cdo/aid/4788764/jewish/Borer-Selecting.htm",
+    "image": "images/borer.png"
   },
   "Tochain": {
     "displayName": "To",
     "subtext": "Tochain",
-    "colors": { "background": "#D8A8FF", "text": "#000000" },
-    "url": "https://www.chabad.org/library/article_cdo/aid/4740282/jewish/Tochen-Grinding.htm"
+    "colors": {
+      "background": "#D8A8FF",
+      "text": "#000000"
+    },
+    "url": "https://www.chabad.org/library/article_cdo/aid/4740282/jewish/Tochen-Grinding.htm",
+    "image": "images/tochain.png"
   },
   "Miraked": {
     "displayName": "Mi",
     "subtext": "Miraked",
-    "colors": { "background": "#D8A8FF", "text": "#000000" },
-    "url": "https://www.chabad.org/library/article_cdo/aid/4817714/jewish/Meraked-Sifting.htm"
+    "colors": {
+      "background": "#D8A8FF",
+      "text": "#000000"
+    },
+    "url": "https://www.chabad.org/library/article_cdo/aid/4817714/jewish/Meraked-Sifting.htm",
+    "image": "images/miraked.png"
   },
   "Lush": {
     "displayName": "Lu",
     "subtext": "Lush",
-    "colors": { "background": "#D8A8FF", "text": "#000000" },
-    "url": "https://www.chabad.org/library/article_cdo/aid/4819033/jewish/Losh-Kneading.htm"
+    "colors": {
+      "background": "#D8A8FF",
+      "text": "#000000"
+    },
+    "url": "https://www.chabad.org/library/article_cdo/aid/4819033/jewish/Losh-Kneading.htm",
+    "image": "images/lush.png"
   },
   "Ofeh": {
     "displayName": "Of",
     "subtext": "Ofeh",
-    "colors": { "background": "#D8A8FF", "text": "#000000" },
-    "url": "https://www.chabad.org/library/article_cdo/aid/4833881/jewish/Bishul-Cooking.htm"
+    "colors": {
+      "background": "#D8A8FF",
+      "text": "#000000"
+    },
+    "url": "https://www.chabad.org/library/article_cdo/aid/4833881/jewish/Bishul-Cooking.htm",
+    "image": "images/ofeh.png"
   },
   "Kotaiv": {
     "displayName": "Kt",
     "subtext": "Kotaiv",
-    "colors": { "background": "#FFC107", "text": "#000000" },
-    "url": "https://www.chabad.org/library/article_cdo/aid/5152314/jewish/Koteiv-Writing.htm"
+    "colors": {
+      "background": "#FFC107",
+      "text": "#000000"
+    },
+    "url": "https://www.chabad.org/library/article_cdo/aid/5152314/jewish/Koteiv-Writing.htm",
+    "image": "images/kotaiv.png"
   },
   "Mechait": {
     "displayName": "Mk",
     "subtext": "Mechait",
-    "colors": { "background": "#FFC107", "text": "#000000" },
-    "url": "https://www.chabad.org/library/article_cdo/aid/102032/jewish/The-39-Melachot.htm"
+    "colors": {
+      "background": "#FFC107",
+      "text": "#000000"
+    },
+    "url": "https://www.chabad.org/library/article_cdo/aid/102032/jewish/The-39-Melachot.htm",
+    "image": "images/mechait.png"
   },
   "Goez": {
     "displayName": "Go",
     "subtext": "Goez",
-    "colors": { "background": "#A566FF", "text": "#000000" },
-    "url": "https://www.chabad.org/library/article_cdo/aid/4844108/jewish/Gozez-Shearing.htm"
+    "colors": {
+      "background": "#A566FF",
+      "text": "#000000"
+    },
+    "url": "https://www.chabad.org/library/article_cdo/aid/4844108/jewish/Gozez-Shearing.htm",
+    "image": "images/goez.png"
   },
   "Melabain": {
     "displayName": "Me",
     "subtext": "Melabain",
-    "colors": { "background": "#A566FF", "text": "#000000" },
-    "url": "https://www.chabad.org/library/article_cdo/aid/4853580/jewish/Melaben-Bleaching-Laundering.htm"
+    "colors": {
+      "background": "#A566FF",
+      "text": "#000000"
+    },
+    "url": "https://www.chabad.org/library/article_cdo/aid/4853580/jewish/Melaben-Bleaching-Laundering.htm",
+    "image": "images/melabain.png"
   },
   "Menafetz": {
     "displayName": "Mn",
     "subtext": "Menafetz",
-    "colors": { "background": "#A566FF", "text": "#000000" },
-    "url": "https://www.chabad.org/library/article_cdo/aid/4861029/jewish/Menapetz-Combing.htm"
+    "colors": {
+      "background": "#A566FF",
+      "text": "#000000"
+    },
+    "url": "https://www.chabad.org/library/article_cdo/aid/4861029/jewish/Menapetz-Combing.htm",
+    "image": "images/menafetz.png"
   },
   "Tzovayah": {
     "displayName": "Tz",
     "subtext": "Tzovayah",
-    "colors": { "background": "#A566FF", "text": "#000000" },
-    "url": "https://www.chabad.org/library/article_cdo/aid/4904572/jewish/Tzoveya-Dyeing.htm"
+    "colors": {
+      "background": "#A566FF",
+      "text": "#000000"
+    },
+    "url": "https://www.chabad.org/library/article_cdo/aid/4904572/jewish/Tzoveya-Dyeing.htm",
+    "image": "images/tzovayah.png"
   },
   "Toveh": {
     "displayName": "Tv",
     "subtext": "Toveh",
-    "colors": { "background": "#A566FF", "text": "#000000" },
-    "url": "https://www.chabad.org/library/article_cdo/aid/4917849/jewish/The-Five-Steps-of-Weaving.htm"
+    "colors": {
+      "background": "#A566FF",
+      "text": "#000000"
+    },
+    "url": "https://www.chabad.org/library/article_cdo/aid/4917849/jewish/The-Five-Steps-of-Weaving.htm",
+    "image": "images/toveh.png"
   },
   "Maisach": {
     "displayName": "Ma",
     "subtext": "Maisach",
-    "colors": { "background": "#A566FF", "text": "#000000" },
-    "url": "https://www.chabad.org/library/article_cdo/aid/4917849/jewish/The-Five-Steps-of-Weaving.htm"
+    "colors": {
+      "background": "#A566FF",
+      "text": "#000000"
+    },
+    "url": "https://www.chabad.org/library/article_cdo/aid/4917849/jewish/The-Five-Steps-of-Weaving.htm",
+    "image": "images/maisach.png"
   },
   "Oseh Bei Batel Neirin": {
     "displayName": "Ob",
     "subtext": "Oseh Bei Batel Neirin",
-    "colors": { "background": "#A566FF", "text": "#000000" },
-    "url": "https://www.chabad.org/library/article_cdo/aid/4917849/jewish/The-Five-Steps-of-Weaving.htm"
+    "colors": {
+      "background": "#A566FF",
+      "text": "#000000"
+    },
+    "url": "https://www.chabad.org/library/article_cdo/aid/4917849/jewish/The-Five-Steps-of-Weaving.htm",
+    "image": "images/oseh_bei_batel_neirin.png"
   },
   "Boneh": {
     "displayName": "Bn",
     "subtext": "Boneh",
-    "colors": { "background": "#FFC107", "text": "#000000" },
-    "url": "https://www.chabad.org/library/article_cdo/aid/5163573/jewish/Boneh-Building.htm"
+    "colors": {
+      "background": "#FFC107",
+      "text": "#000000"
+    },
+    "url": "https://www.chabad.org/library/article_cdo/aid/5163573/jewish/Boneh-Building.htm",
+    "image": "images/boneh.png"
   },
   "Oraig": {
     "displayName": "Or",
     "subtext": "Oraig",
-    "colors": { "background": "#C345C6", "text": "#000000" },
-    "url": "https://www.chabad.org/library/article_cdo/aid/4917849/jewish/The-Five-Steps-of-Weaving.htm"
+    "colors": {
+      "background": "#C345C6",
+      "text": "#000000"
+    },
+    "url": "https://www.chabad.org/library/article_cdo/aid/4917849/jewish/The-Five-Steps-of-Weaving.htm",
+    "image": "images/oraig.png"
   },
   "Potzi'ah": {
     "displayName": "Po",
     "subtext": "Potzi'ah",
-    "colors": { "background": "#C345C6", "text": "#000000" },
-    "url": "https://www.chabad.org/library/article_cdo/aid/6897566/jewish/Hotzaah-Transferring.htm"
+    "colors": {
+      "background": "#C345C6",
+      "text": "#000000"
+    },
+    "url": "https://www.chabad.org/library/article_cdo/aid/6897566/jewish/Hotzaah-Transferring.htm",
+    "image": "images/potziah.png"
   },
   "Koshair": {
     "displayName": "Ko",
     "subtext": "Koshair",
-    "colors": { "background": "#C345C6", "text": "#000000" },
-    "url": "https://www.chabad.org/library/article_cdo/aid/4937160/jewish/Koshair-Tying.htm"
+    "colors": {
+      "background": "#C345C6",
+      "text": "#000000"
+    },
+    "url": "https://www.chabad.org/library/article_cdo/aid/4937160/jewish/Koshair-Tying.htm",
+    "image": "images/koshair.png"
   },
   "Matir": {
     "displayName": "Mr",
     "subtext": "Matir",
-    "colors": { "background": "#C345C6", "text": "#000000" },
-    "url": "https://www.chabad.org/library/article_cdo/aid/4943184/jewish/Matir-Untying.htm"
+    "colors": {
+      "background": "#C345C6",
+      "text": "#000000"
+    },
+    "url": "https://www.chabad.org/library/article_cdo/aid/4943184/jewish/Matir-Untying.htm",
+    "image": "images/matir.png"
   },
   "Memacheik": {
     "displayName": "Mt",
     "subtext": "Memacheik",
-    "colors": { "background": "#C345C6", "text": "#000000" },
-    "url": "https://www.chabad.org/library/article_cdo/aid/5128235/jewish/Memachek-Smoothing.htm"
+    "colors": {
+      "background": "#C345C6",
+      "text": "#000000"
+    },
+    "url": "https://www.chabad.org/library/article_cdo/aid/5128235/jewish/Memachek-Smoothing.htm",
+    "image": "images/memacheik.png"
   },
   "Tofair": {
     "displayName": "Tf",
     "subtext": "Tofair",
-    "colors": { "background": "#C345C6", "text": "#000000" },
-    "url": "https://www.chabad.org/library/article_cdo/aid/4952180/jewish/Tofair-Sewing.htm"
+    "colors": {
+      "background": "#C345C6",
+      "text": "#000000"
+    },
+    "url": "https://www.chabad.org/library/article_cdo/aid/4952180/jewish/Tofair-Sewing.htm",
+    "image": "images/tofair.png"
   },
   "Ko'reah": {
     "displayName": "Kr",
     "subtext": "Ko'reah",
-    "colors": { "background": "#C345C6", "text": "#000000" },
-    "url": "https://www.chabad.org/library/article_cdo/aid/4983058/jewish/Koraya-Tearing.htm"
+    "colors": {
+      "background": "#C345C6",
+      "text": "#000000"
+    },
+    "url": "https://www.chabad.org/library/article_cdo/aid/4983058/jewish/Koraya-Tearing.htm",
+    "image": "images/koreah.png"
   },
   "Soiser": {
     "displayName": "So",
     "subtext": "Soiser",
-    "colors": { "background": "#FFC107", "text": "#000000" },
-    "url": "https://www.chabad.org/library/article_cdo/aid/5163573/jewish/Boneh-Building.htm"
+    "colors": {
+      "background": "#FFC107",
+      "text": "#000000"
+    },
+    "url": "https://www.chabad.org/library/article_cdo/aid/5163573/jewish/Boneh-Building.htm",
+    "image": "images/soiser.png"
   },
   "Tzud": {
     "displayName": "Td",
     "subtext": "Tzud",
-    "colors": { "background": "#B7FF3C", "text": "#000000" },
-    "url": "https://www.chabad.org/library/article_cdo/aid/5009500/jewish/Tzod-Trapping.htm"
+    "colors": {
+      "background": "#B7FF3C",
+      "text": "#000000"
+    },
+    "url": "https://www.chabad.org/library/article_cdo/aid/5009500/jewish/Tzod-Trapping.htm",
+    "image": "images/tzud.png"
   },
   "Shochet": {
     "displayName": "Sc",
     "subtext": "Shochet",
-    "colors": { "background": "#B7FF3C", "text": "#000000" },
-    "url": "https://www.chabad.org/library/article_cdo/aid/5028250/jewish/Shochait-Slaughtering.htm"
+    "colors": {
+      "background": "#B7FF3C",
+      "text": "#000000"
+    },
+    "url": "https://www.chabad.org/library/article_cdo/aid/5028250/jewish/Shochait-Slaughtering.htm",
+    "image": "images/shochet.png"
   },
   "Mafshit": {
     "displayName": "Mf",
     "subtext": "Mafshit",
-    "colors": { "background": "#B7FF3C", "text": "#000000" },
-    "url": "https://www.chabad.org/library/article_cdo/aid/5099183/jewish/Mafshit-Skinning.htm"
+    "colors": {
+      "background": "#B7FF3C",
+      "text": "#000000"
+    },
+    "url": "https://www.chabad.org/library/article_cdo/aid/5099183/jewish/Mafshit-Skinning.htm",
+    "image": "images/mafshit.png"
   },
   "Ma'aboid": {
     "displayName": "Mb",
     "subtext": "Ma'aboid",
-    "colors": { "background": "#B7FF3C", "text": "#000000" },
-    "url": "https://www.chabad.org/library/article_cdo/aid/5106334/jewish/Meabeid-Tanning-Hides.htm"
+    "colors": {
+      "background": "#B7FF3C",
+      "text": "#000000"
+    },
+    "url": "https://www.chabad.org/library/article_cdo/aid/5106334/jewish/Meabeid-Tanning-Hides.htm",
+    "image": "images/maaboid.png"
   },
   "Mechateich": {
     "displayName": "Mi",
     "subtext": "Mechateich",
-    "colors": { "background": "#B7FF3C", "text": "#000000" },
-    "url": "https://www.chabad.org/library/article_cdo/aid/5139146/jewish/Mechateich-Cutting.htm"
+    "colors": {
+      "background": "#B7FF3C",
+      "text": "#000000"
+    },
+    "url": "https://www.chabad.org/library/article_cdo/aid/5139146/jewish/Mechateich-Cutting.htm",
+    "image": "images/mechateich.png"
   },
   "Meshartois": {
     "displayName": "Mh",
     "subtext": "Meshartois",
-    "colors": { "background": "#B7FF3C", "text": "#000000" },
-    "url": "https://www.chabad.org/library/article_cdo/aid/5129912/jewish/Mesarteit-Ruling-Lines.htm"
+    "colors": {
+      "background": "#B7FF3C",
+      "text": "#000000"
+    },
+    "url": "https://www.chabad.org/library/article_cdo/aid/5129912/jewish/Mesarteit-Ruling-Lines.htm",
+    "image": "images/meshartois.png"
   },
   "Hatza'ah": {
     "displayName": "Ha",
     "subtext": "Hatza'ah",
-    "colors": { "background": "#B7FF3C", "text": "#000000" },
-    "url": "https://www.chabad.org/library/article_cdo/aid/6897566/jewish/Hotzaah-Transferring.htm"
+    "colors": {
+      "background": "#B7FF3C",
+      "text": "#000000"
+    },
+    "url": "https://www.chabad.org/library/article_cdo/aid/6897566/jewish/Hotzaah-Transferring.htm",
+    "image": "images/hatzaah.png"
   },
   "Makeh b'Potash": {
     "displayName": "MP",
     "subtext": "Makeh b'Potash",
-    "colors": { "background": "#B7FF3C", "text": "#000000" },
-    "url": "https://www.chabad.org/library/article_cdo/aid/5358316/jewish/Makeh-Bepatish-Completing.htm"
+    "colors": {
+      "background": "#B7FF3C",
+      "text": "#000000"
+    },
+    "url": "https://www.chabad.org/library/article_cdo/aid/5358316/jewish/Makeh-Bepatish-Completing.htm",
+    "image": "images/makeh_bpotash.png"
   }
 }
