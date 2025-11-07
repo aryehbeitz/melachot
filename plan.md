@@ -1,4 +1,4 @@
-# 40 Melachot GitHub Pages Site
+# 39 Melachot GitHub Pages Site
 
 Create a GitHub Pages site with a periodic-table-style grid for the 39 melachot, driven by a JSON configuration whose keys are the full melacha names.
 

@@ -1,4 +1,4 @@
-# 40 Melachot
+# 39 Melachot
 
 A periodic-table-style interactive grid displaying the 39 melachot (categories of work prohibited on Shabbat). Each block links to educational resources about that melacha.
 
