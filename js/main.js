@@ -1,3 +1,6 @@
+// Deployment timestamp
+const DEPLOYMENT_TIME = 'November 07, 2025 at 11:53:52 (Israel Time)';
+
 // Load the links.json file and populate the grid
 async function loadMelachot() {
     try {
@@ -75,27 +78,12 @@ async function loadMelachot() {
     }
 }
 
-// Update the last updated timestamp with Israel time
+// Update the last updated timestamp with deployment time
 function updateLastUpdated() {
-    const now = new Date();
-
-    // Format date and time in Israel timezone
-    const options = {
-        timeZone: 'Asia/Jerusalem',
-        year: 'numeric',
-        month: 'long',
-        day: 'numeric',
-        hour: '2-digit',
-        minute: '2-digit',
-        second: '2-digit',
-        hour12: false
-    };
-
-    const israelTime = now.toLocaleString('en-US', options);
     const lastUpdatedElement = document.getElementById('last-updated');
 
     if (lastUpdatedElement) {
-        lastUpdatedElement.textContent = israelTime + ' (Israel Time)';
+        lastUpdatedElement.textContent = DEPLOYMENT_TIME;
     }
 }
 

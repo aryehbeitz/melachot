@@ -91,6 +91,24 @@ https://YOUR_USERNAME.github.io/melachot/
 
 Replace `YOUR_USERNAME` with your actual GitHub username.
 
+## Deploying Updates
+
+When you make changes and want to deploy a new version:
+
+```bash
+# 1. Update the deployment timestamp
+python3 update_timestamp.py
+
+# 2. Stage and commit your changes
+git add .
+git commit -m "Your commit message"
+
+# 3. Push to GitHub
+git push origin main
+```
+
+The `update_timestamp.py` script automatically updates the "Last updated" timestamp at the bottom of the page to show when the site was last deployed (in Israel timezone).
+
 ## Local Development
 
 To test the site locally, you need to run a local web server (due to CORS restrictions on loading JSON files):
