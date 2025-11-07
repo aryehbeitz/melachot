@@ -75,5 +75,32 @@ async function loadMelachot() {
     }
 }
 
+// Update the last updated timestamp with Israel time
+function updateLastUpdated() {
+    const now = new Date();
+
+    // Format date and time in Israel timezone
+    const options = {
+        timeZone: 'Asia/Jerusalem',
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric',
+        hour: '2-digit',
+        minute: '2-digit',
+        second: '2-digit',
+        hour12: false
+    };
+
+    const israelTime = now.toLocaleString('en-US', options);
+    const lastUpdatedElement = document.getElementById('last-updated');
+
+    if (lastUpdatedElement) {
+        lastUpdatedElement.textContent = israelTime + ' (Israel Time)';
+    }
+}
+
 // Load melachot when the page loads
-document.addEventListener('DOMContentLoaded', loadMelachot);
+document.addEventListener('DOMContentLoaded', () => {
+    loadMelachot();
+    updateLastUpdated();
+});

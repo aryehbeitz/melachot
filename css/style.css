@@ -71,6 +71,18 @@ h1 {
     line-height: 1.2;
 }
 
+.footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+    color: #FFFFFF;
+    font-size: 0.9em;
+}
+
+.footer p {
+    margin: 0;
+}
+
 @media (max-width: 1024px) {
     .melachot-grid {
         grid-template-columns: repeat(6, 1fr);
