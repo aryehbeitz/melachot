@@ -1,78 +1,84 @@
 // Deployment timestamp
-const DEPLOYMENT_TIME = 'November 07, 2025 at 12:01:59 (Israel Time)';
+const DEPLOYMENT_TIME = 'November 08, 2025 at 20:07:27 (Israel Time)';
 
-// Load the links.json file and populate the grid
+// Define the order of melachot to match the periodic table layout
+const melachotOrder = [
+    // Row 1: 6 cyan blocks, 1 gap, 2 orange blocks
+    'Choresh', 'Zoreah', 'Kotzair', 'Ma\'amir', 'Dush', 'Zoreh', null, 'Ma\'avir', 'Mechabeh',
+    // Row 2: 5 light purple blocks, 2 gaps, 2 orange blocks
+    'Borer', 'Tochain', 'Miraked', 'Lush', 'Ofeh', null, null, 'Kotaiv', 'Mechait',
+    // Row 3: 7 darker purple blocks, 1 orange block
+    'Goez', 'Melabain', 'Menafetz', 'Tzovayah', 'Toveh', 'Maisach', 'Oseh Bei Batel Neirin', 'Boneh',
+    // Row 4: 7 magenta blocks, 1 orange block
+    'Oraig', 'Potzi\'ah', 'Koshair', 'Matir', 'Memacheik', 'Tofair', 'Ko\'reah', 'Soiser',
+    // Row 5: 8 yellow-green blocks
+    'Tzud', 'Shochet', 'Mafshit', 'Ma\'aboid', 'Mechateich', 'Meshartois', 'Hatza\'ah', 'Makeh b\'Potash'
+];
+
+// Populate a grid with melachot (with or without images)
+function populateGrid(gridElement, data, useImages) {
+    for (const key of melachotOrder) {
+        if (key === null) {
+            // Create an empty grid cell for spacing
+            const spacer = document.createElement('div');
+            spacer.className = 'grid-spacer';
+            gridElement.appendChild(spacer);
+        } else {
+            const melacha = data[key];
+            if (!melacha) {
+                console.warn(`Melacha not found: ${key}`);
+                continue;
+            }
+
+            // Create a link element for each melacha
+            const block = document.createElement('a');
+            block.className = 'melacha-block';
+            block.href = melacha.url;
+            block.target = '_blank';
+
+            if (useImages && melacha.image) {
+                // Use the image as the entire block content
+                block.style.backgroundImage = `url(${melacha.image})`;
+                block.style.backgroundSize = 'cover';
+                block.style.backgroundPosition = 'center';
+            } else if (melacha.colors) {
+                // Use colors and text for blocks
+                block.style.backgroundColor = melacha.colors.background;
+                block.style.color = melacha.colors.text;
+
+                // Create display name element
+                const displayName = document.createElement('div');
+                displayName.className = 'display-name';
+                displayName.textContent = melacha.displayName;
+
+                // Create subtext element
+                const subtext = document.createElement('div');
+                subtext.className = 'subtext';
+                subtext.textContent = melacha.subtext;
+
+                // Append elements to the block
+                block.appendChild(displayName);
+                block.appendChild(subtext);
+            }
+
+            // Append block to grid
+            gridElement.appendChild(block);
+        }
+    }
+}
+
+// Load the links.json file and populate both grids
 async function loadMelachot() {
     try {
         const response = await fetch('links.json');
         const data = await response.json();
 
-        const grid = document.getElementById('melachot-grid');
+        const gridImages = document.getElementById('melachot-grid-images');
+        const gridColors = document.getElementById('melachot-grid-colors');
 
-        // Define the order of melachot to match the periodic table layout
-        const order = [
-            // Row 1: 6 cyan blocks, 1 gap, 2 orange blocks
-            'Choresh', 'Zoreah', 'Kotzair', 'Ma\'amir', 'Dush', 'Zoreh', null, 'Ma\'avir', 'Mechabeh',
-            // Row 2: 5 light purple blocks, 2 gaps, 2 orange blocks
-            'Borer', 'Tochain', 'Miraked', 'Lush', 'Ofeh', null, null, 'Kotaiv', 'Mechait',
-            // Row 3: 7 darker purple blocks, 1 orange block
-            'Goez', 'Melabain', 'Menafetz', 'Tzovayah', 'Toveh', 'Maisach', 'Oseh Bei Batel Neirin', 'Boneh',
-            // Row 4: 7 magenta blocks, 1 orange block
-            'Oraig', 'Potzi\'ah', 'Koshair', 'Matir', 'Memacheik', 'Tofair', 'Ko\'reah', 'Soiser',
-            // Row 5: 8 yellow-green blocks
-            'Tzud', 'Shochet', 'Mafshit', 'Ma\'aboid', 'Mechateich', 'Meshartois', 'Hatza\'ah', 'Makeh b\'Potash'
-        ];
-
-        // Iterate through the order array
-        for (const key of order) {
-            if (key === null) {
-                // Create an empty grid cell for spacing
-                const spacer = document.createElement('div');
-                spacer.className = 'grid-spacer';
-                grid.appendChild(spacer);
-            } else {
-                const melacha = data[key];
-                if (!melacha) {
-                    console.warn(`Melacha not found: ${key}`);
-                    continue;
-                }
-
-                // Create a link element for each melacha
-                const block = document.createElement('a');
-                block.className = 'melacha-block';
-                block.href = melacha.url;
-                block.target = '_blank';
-
-                // Apply background color or image
-                if (melacha.image) {
-                    // Use the image as the entire block content
-                    block.style.backgroundImage = `url(${melacha.image})`;
-                    block.style.backgroundSize = 'cover';
-                    block.style.backgroundPosition = 'center';
-                } else if (melacha.colors) {
-                    // Use colors and text for blocks without images
-                    block.style.backgroundColor = melacha.colors.background;
-                    block.style.color = melacha.colors.text;
-
-                    // Create display name element
-                    const displayName = document.createElement('div');
-                    displayName.className = 'display-name';
-                    displayName.textContent = melacha.displayName;
-
-                    // Create subtext element
-                    const subtext = document.createElement('div');
-                    subtext.className = 'subtext';
-                    subtext.textContent = melacha.subtext;
-
-                    // Append elements to the block
-                    block.appendChild(displayName);
-                    block.appendChild(subtext);
-                }
-
-                // Append block to grid
-                grid.appendChild(block);
-            }
-        }
+        // Populate both grids
+        populateGrid(gridImages, data, true);  // With images
+        populateGrid(gridColors, data, false); // Without images (colors only)
     } catch (error) {
         console.error('Error loading melachot:', error);
     }
